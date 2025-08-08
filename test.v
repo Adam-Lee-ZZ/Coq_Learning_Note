@@ -1,21 +1,20 @@
-Inductive day : Type :=
-    | monday
-    | tuesday
-    | wednesday
-    | thursday
-    | friday
-    | saturday
-    | sunday.
+Fixpoint eqb (n m : nat) : bool :=
+  match n with
+  | O => match m with
+         | O => true
+         | S m' => false
+         end
+  | S n' => match m with
+            | O => false
+            | S m' => eqb n' m'
+            end
+  end.
 
-Definition next_working_day (d:day) : day :=
-    match d with
-        | monday \u21d2 tuesday
-        | tuesday \u21d2 wednesday
-        | wednesday \u21d2 thursday
-        | thursday \u21d2 friday
-        | friday \u21d2 monday
-        | saturday \u21d2 monday
-        | sunday \u21d2 monday
-    end.
+Notation "x =? y" := (eqb x y) (at level 70) : nat_scope.
 
-Compute (next_working_day friday).
+Theorem plus_1_neq_0 : forall n : nat,
+  (n + 1) =? 0 = false.
+Proof.
+  intros n. destruct n as [| n'] eqn:E.
+  - reflexivity.
+  - reflexivity. Qed.
