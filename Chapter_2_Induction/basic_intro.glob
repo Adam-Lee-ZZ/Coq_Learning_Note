@@ -1,0 +1,58 @@
+DIGEST ded354c46d204683018c10ba04ff5a58
+FLF.basic_intro
+R15:20 Coq.Program.Basics <> <> lib
+prf 32:38 <> mul_0_r
+R51:53 Coq.Init.Datatypes <> nat ind
+binder 49:49 <> n:1
+R63:65 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R59:61 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R58:58 LF.basic_intro <> n:1 var
+prf 185:193 <> plus_n_Sm
+R210:212 Coq.Init.Datatypes <> nat ind
+binder 204:204 <> n:2
+binder 206:206 <> m:3
+R226:228 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R217:217 Coq.Init.Datatypes <> S constr
+R221:223 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R220:220 LF.basic_intro <> n:2 var
+R224:224 LF.basic_intro <> m:3 var
+R230:233 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R237:237 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R229:229 LF.basic_intro <> n:2 var
+R234:234 Coq.Init.Datatypes <> S constr
+R236:236 LF.basic_intro <> m:3 var
+prf 369:376 <> add_comm
+R393:395 Coq.Init.Datatypes <> nat ind
+binder 387:387 <> n:4
+binder 389:389 <> m:5
+R405:407 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R401:403 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R400:400 LF.basic_intro <> n:4 var
+R404:404 LF.basic_intro <> m:5 var
+R409:411 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R408:408 LF.basic_intro <> m:5 var
+R412:412 LF.basic_intro <> n:4 var
+R488:495 Coq.Init.Peano <> plus_n_O thm
+R488:495 Coq.Init.Peano <> plus_n_O thm
+R488:495 Coq.Init.Peano <> plus_n_O thm
+R547:555 LF.basic_intro <> plus_n_Sm thm
+R547:555 LF.basic_intro <> plus_n_Sm thm
+R547:555 LF.basic_intro <> plus_n_Sm thm
+prf 585:593 <> add_assoc
+R612:614 Coq.Init.Datatypes <> nat ind
+binder 604:604 <> n:6
+binder 606:606 <> m:7
+binder 608:608 <> p:8
+R630:632 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R620:623 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R629:629 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R619:619 LF.basic_intro <> n:6 var
+R625:627 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R624:624 LF.basic_intro <> m:7 var
+R628:628 LF.basic_intro <> p:8 var
+R633:633 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R639:642 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R635:637 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R634:634 LF.basic_intro <> n:6 var
+R638:638 LF.basic_intro <> m:7 var
+R643:643 LF.basic_intro <> p:8 var
